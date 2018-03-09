@@ -98,6 +98,7 @@ for subj = [1 2 5 6 7] % subject loop
         for utter = 1:10 % utterance loop
             
             uInd = find(CochleogramUtterances == utter);
+            load(sprintf('dataTest_%d_%d_%d', subj, digit, utter));
 
             figure(1);
             clf
